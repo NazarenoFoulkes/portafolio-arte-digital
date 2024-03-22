@@ -132,41 +132,69 @@ footer{
     margin: 5px;
 }
 
-@media(max-width: 800px){
-    #contact .text-title p:after{
-        width: 70px;
+/* Estilos para versiones de pantalla pequeñas */
+@media(max-width: 800px) {
+    /* Ajustes para centrar y adaptar la sección de contacto en pantallas más pequeñas */
+    #contact {
+        text-align: center;
     }
-    .C p{
-        font-size: 14px;
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .B p{
-        font-size: 10px;
-    }
-    .contact-container{
-        display: block;
+
+    .contact-left,
+    .contact-right {
+        margin-top: 20px; /* Reducir el margen superior */
+        margin-bottom: 50px; /* Reducir el margen inferior */
         width: 100%;
-        margin-bottom: 20px;
     }
-    .contact-left, .contact-right{
-        margin-top: 50px;
-        margin-bottom: 100px;
-        width: 100%;
-        height: 100%;
-    }
-    .contact-inner-container{
+
+    .contact-inner-container {
         font-size: 14px;
     }
-    .contact-thin-text{
+
+    .contact-thin-text {
         font-size: 14px;
     }
-    .email-not-sent{
-        font-size: 20px;
-    }
-    form input, form textarea{
-        font-size: 14px;
-    }
-    .send{
+
+    .email-not-sent {
         font-size: 20px;
     }
 
+    form input,
+    form textarea {
+        font-size: 14px;
+    }
+
+    .send {
+        font-size: 20px;
+    }
+}
+
+/* Estilos para centrar la sección de contacto en versiones de pantalla pequeñas */
+@media(max-width: 800px) {
+    .contact-right {
+        margin: 0 auto; /* Centrar horizontalmente */
+        text-align: center; /* Centrar el texto */
+        width: 100%; /* Asegurar que ocupe todo el ancho disponible */
+    }
+}
+
+/* Estilos para el footer en versiones de pantalla pequeñas */
+@media(max-width: 800px) {
+    /* Ajustes para centrar y adaptar el footer en pantallas más pequeñas */
+    footer {
+        text-align: center;
+        padding: 0px;
+        margin: 0 auto; /* Centrar horizontalmente */
+        position: relative; /* Cambiar posición a relativa */
+        width: 100%;
+        background: #161f28;
+        border-top: 5px solid #FF4C01;
+        height: 160px;
+        transform: none; /* Eliminar transformación */
+    }
 }
