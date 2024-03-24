@@ -1,74 +1,76 @@
-#contact{
+#contact {
     text-align: center;
     margin-top: 150px;
     min-height: 100vh;
     position: relative;
     color: white;
-    text-align: center;
-    justify-content: space-between;
 }
 
-#contact .text-title p:after{
-    width: 100px;
-}
-.contact-container{
-    display: flex;
+.contact-container {
     width: 80vw;
     margin: 0 auto;
     margin-bottom: 50px;
     margin-top: 50px;
-}
-.contact-left, .contact-right{
     display: flex;
-    width: 50%;
+    flex-direction: column; /* Cambiamos a columna para centrar verticalmente también */
+    align-items: center; /* Centrar verticalmente */
 }
-.contact-inner-container{
-    display: block;
+
+.contact-left,
+.contact-right {
+    width: 100%; /* Ajustamos el ancho */
+}
+
+.contact-inner-container {
     text-align: left;
-    float: left;
     font-size: 20px;
     width: 100%;
 }
-.contact-thin-text{
+
+.contact-thin-text {
     font-size: 18px;
     font-weight: 300;
     margin-top: 30px;
     margin-bottom: 15px;
 }
-.email-not-sent{
+
+.email-not-sent {
     font-size: 30px;
     color: transparent;
     background: transparent;
     opacity: 0%;
     z-index: -2000;
     transition: 0.5s;
-
-    opacity: 0%;
     width: 100%;
     height: 100%;
     z-index: -2000;
-    position:fixed;
+    position: fixed;
     top: 0;
     left: 0;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     transition: 0.5s;
 }
-.email-sent{
+
+.email-sent {
     color: white;
     background: linear-gradient(94.94deg, #1d3036 -1.76%, #1a2530 80.53%);
     opacity: 90%;
     z-index: 2000;
     transition: 0.5s;
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     width: 80%;
+    margin: 0 auto; /* Centrar formulario dentro de .contact-container */
 }
-form input, form textarea{
+
+form input,
+form textarea {
     font-size: 16px;
     font-weight: 300;
     resize: none;
@@ -80,39 +82,44 @@ form input, form textarea{
     outline: none;
     border-radius: 6px;
 }
-.send{
-    text-align: center;
-    margin: 50px;
+.send {
+    width: fit-content; /* Ajustamos el ancho según el contenido */
+    margin: 50px auto 20px; /* Centramos y ajustamos el margen inferior */
     font-style: bold;
-    font-size: 26px;
+    font-size: 20px; /* Ajustamos el tamaño de fuente */
     color: white;
     background: linear-gradient(94.94deg, #1bb3da -1.76%, #1382cc 80.53%);
-    padding: 10px 50px;
-
-    border-radius: 75px;
+    padding: 10px 30px; /* Reducimos el padding para hacerlo más corto */
+    border-radius: 30px; /* Reducimos el radio del borde para hacerlo más redondo */
     cursor: pointer;
     transition: 0.5s;
 }
-.send:hover{
+
+.send:hover {
     color: black;
     background: white;
 }
-.external-links-2{
+
+
+
+.external-links-2 {
     margin-top: 0px;
 }
-.C p{
+
+.C p {
     position: relative;
-    transform: translate(0%,30vh);
+    transform: translate(0%, 30vh);
     font-size: 16px;
     margin: 10px;
 }
 
-.A p{
+.A p {
     position: relative;
     top: 20px;
     font-size: 16px;
     margin: 10px;
 }
+
 
 footer{
     text-align: center;
